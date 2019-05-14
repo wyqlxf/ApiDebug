@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/bg_splash" />
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/height600px"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="@dimen/width69px" />
+
+    <Button
+        android:id="@+id/btnJump"
+        android:layout_width="@dimen/width137px"
+        android:layout_height="@dimen/width64px"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/width60px"
+        android:layout_marginRight="@dimen/width30px"
+        android:background="@drawable/shape_splash_skip"
+        android:gravity="center"
+        android:padding="@dimen/width0px"
+        android:text="@string/jump"
+        android:textColor="@color/white"
+        android:textSize="@dimen/width34px" />
+
+</RelativeLayout>

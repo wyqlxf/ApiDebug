@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height148px"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/width22px"
+            android:background="@drawable/drawable_head_back_bg"
+            android:clickable="true"
+            android:padding="@dimen/width22px"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_arrow_back_white_24dp" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/width152px"
+            android:layout_marginRight="@dimen/width152px"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="API请求"
+            android:textColor="@color/white"
+            android:textSize="@dimen/width53px" />
+
+        <ImageView
+            android:id="@+id/ivFav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/width22px"
+            android:background="@drawable/drawable_head_back_bg"
+            android:clickable="true"
+            android:padding="@dimen/width22px"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_favorite_border_white_24dp" />
+
+    </RelativeLayout>
+
+    <thereisnospon.codeview.CodeView
+        android:id="@+id/codeView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/llResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvDevelopment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_margin="@dimen/width22px"
+                        android:background="@drawable/shape_list_btn_bg"
+                        android:cursorVisible="false"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/width22px"
+                        android:paddingTop="@dimen/width11px"
+                        android:paddingRight="@dimen/width22px"
+                        android:paddingBottom="@dimen/width11px"
+                        android:textColor="#ff0000"
+                        android:textIsSelectable="true"
+                        android:textSize="@dimen/width38px" />
+
+                    <TextView
+                        android:id="@+id/tvTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/width110px"
+                        android:layout_marginTop="@dimen/width22px"
+                        android:layout_toRightOf="@+id/tvDevelopment"
+                        android:cursorVisible="false"
+                        android:padding="@dimen/width22px"
+                        android:textColor="#00ff5a"
+                        android:textIsSelectable="true"
+                        android:textSize="@dimen/width38px" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tvResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:cursorVisible="false"
+                    android:lineSpacingExtra="@dimen/width22px"
+                    android:padding="@dimen/width22px"
+                    android:textColor="#444444"
+                    android:textIsSelectable="true"
+                    android:textSize="@dimen/width38px" />
+
+                <LinearLayout
+                    android:id="@+id/llOtherInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height43px"
+                        android:background="#f5f5f5" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autoLink="web"
+                        android:cursorVisible="false"
+                        android:lineSpacingExtra="@dimen/width22px"
+                        android:padding="@dimen/width22px"
+                        android:text="Cookie:"
+                        android:textColor="#222222"
+                        android:textIsSelectable="false"
+                        android:textSize="@dimen/width46px"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvCookie"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:cursorVisible="false"
+                        android:lineSpacingExtra="@dimen/width22px"
+                        android:padding="@dimen/width22px"
+                        android:textColor="#444444"
+                        android:textIsSelectable="true"
+                        android:textSize="@dimen/width38px" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height43px"
+                        android:background="#f5f5f5" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autoLink="web"
+                        android:cursorVisible="false"
+                        android:lineSpacingExtra="@dimen/width22px"
+                        android:padding="@dimen/width22px"
+                        android:text="请求头:"
+                        android:textColor="#222222"
+                        android:textIsSelectable="false"
+                        android:textSize="@dimen/width46px"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvRequestHeaders"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:cursorVisible="false"
+                        android:lineSpacingExtra="@dimen/width22px"
+                        android:padding="@dimen/width22px"
+                        android:textColor="#444444"
+                        android:textIsSelectable="true"
+                        android:textSize="@dimen/width38px" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height43px"
+                        android:background="#f5f5f5" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autoLink="web"
+                        android:cursorVisible="false"
+                        android:lineSpacingExtra="@dimen/width22px"
+                        android:padding="@dimen/width22px"
+                        android:text="响应头:"
+                        android:textColor="#222222"
+                        android:textIsSelectable="false"
+                        android:textSize="@dimen/width46px"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvResponseHeaders"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:cursorVisible="false"
+                        android:lineSpacingExtra="@dimen/width22px"
+                        android:padding="@dimen/width22px"
+                        android:textColor="#444444"
+                        android:textIsSelectable="true"
+                        android:textSize="@dimen/width38px" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llExpand"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/width127px"
+                    android:background="#f2f2f2"
+                    android:gravity="center_vertical"
+                    android:minWidth="@dimen/width1080px"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/ivExpand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/width383px"
+                        android:src="@drawable/ic_expand_more_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/tvExpand"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/width22px"
+                        android:cursorVisible="false"
+                        android:text="展开更多信息"
+                        android:textColor="#858585"
+                        android:textIsSelectable="false"
+                        android:textSize="@dimen/width38px" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </HorizontalScrollView>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">开发神器</string>
+    <string name="real_time">实时</string>
+    <string name="favorite">收藏</string>
+    <string name="more">更多</string>
+    <string name="api_filter">接口过滤</string>
+    <string name="validity_period">实时期效</string>
+    <string name="simulation_request">模拟请求</string>
+    <string name="download_app">应用下载</string>
+    <string name="about_we">关于我们</string>
+    <string name="jump">跳过</string>
+    <string name="sys_ask_quit_message">您确定退出“开发神器”吗？</string>
+    <string name="sys_ask_quit_title">退出提示</string>
+    <string name="delete_data">刪除数据</string>
+    <string name="filter_data">过滤数据</string>
+    <string name="link_switch">环境切换</string>
+    <string name="web_debug">触屏调试</string>
+    <string name="device_info">设备信息</string>
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="data_loading">正在加载数据</string>
+    <string name="no_data_default">暂无数据，点击进入应用程式</string>
+    <string name="filter_description">对于被过滤的接口，我们不会将它显示在实时列表界面中</string>
+</resources>

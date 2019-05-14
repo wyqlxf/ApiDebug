@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/width648px"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/shape_dialog_item_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/width22px"
+        android:layout_marginRight="@dimen/width22px"
+        android:background="@drawable/shape_dialog_item_bg"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnDeleteData"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/width127px"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="@dimen/width27px"
+            android:singleLine="true"
+            android:text="@string/delete_data"
+            android:textColor="#333333"
+            android:textSize="@dimen/width42px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#f2f2f2" />
+
+        <Button
+            android:id="@+id/btnFilterData"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/width127px"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="@dimen/width27px"
+            android:singleLine="true"
+            android:text="@string/filter_data"
+            android:textColor="#333333"
+            android:textSize="@dimen/width42px" />
+    </LinearLayout>
+
+</RelativeLayout>

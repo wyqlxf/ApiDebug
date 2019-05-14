@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height148px"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/width22px"
+            android:background="@drawable/drawable_head_back_bg"
+            android:clickable="true"
+            android:padding="@dimen/width22px"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_arrow_back_white_24dp" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="字段详情"
+            android:textColor="@color/white"
+            android:textSize="@dimen/width53px" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/width43px"
+                android:layout_marginTop="@dimen/width43px"
+                android:layout_marginRight="@dimen/width43px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="接口地址："
+                    android:textColor="@color/colorTextName"
+                    android:textSize="@dimen/width38px" />
+
+                <TextView
+                    android:id="@+id/tvUrl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/width22px"
+                    android:singleLine="false"
+                    android:text=""
+                    android:textColor="@color/colorTextValue"
+                    android:textIsSelectable="false"
+                    android:textSize="@dimen/width38px" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/width43px"
+                android:layout_marginTop="@dimen/width43px"
+                android:layout_marginRight="@dimen/width43px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="接口类型："
+                    android:textColor="@color/colorTextName"
+                    android:textSize="@dimen/width38px" />
+
+                <TextView
+                    android:id="@+id/tvType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/width22px"
+                    android:maxLines="1"
+                    android:text=""
+                    android:textColor="@color/colorTextValue"
+                    android:textSize="@dimen/width38px" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llParameter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/width43px"
+                android:layout_marginTop="@dimen/width43px"
+                android:layout_marginRight="@dimen/width43px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="接口参数："
+                    android:textColor="@color/colorTextName"
+                    android:textSize="@dimen/width38px" />
+
+                <TextView
+                    android:id="@+id/tvParameter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/width22px"
+                    android:singleLine="false"
+                    android:text=""
+                    android:textColor="@color/colorTextValue"
+                    android:textIsSelectable="true"
+                    android:textSize="@dimen/width38px" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/width43px"
+                android:layout_marginTop="@dimen/width43px"
+                android:layout_marginRight="@dimen/width43px"
+                android:clickable="false"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="接口描述："
+                    android:textColor="@color/colorTextName"
+                    android:textSize="@dimen/width38px" />
+
+                <TextView
+                    android:id="@+id/tvDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/width22px"
+                    android:singleLine="false"
+                    android:text=""
+                    android:textColor="@color/colorTextValue"
+                    android:textSize="@dimen/width38px" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/width43px"
+                android:layout_marginTop="@dimen/width86px"
+                android:layout_marginRight="@dimen/width43px"
+                android:singleLine="false"
+                android:text="字段说明:"
+                android:textColor="@color/colorTextValue"
+                android:textSize="@dimen/width43px"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/llFiledDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/width43px"
+                android:layout_marginTop="@dimen/width43px"
+                android:layout_marginRight="@dimen/width43px"
+                android:clickable="false"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

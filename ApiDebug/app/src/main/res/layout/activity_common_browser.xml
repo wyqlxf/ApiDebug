@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/vStatusBar"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:background="@color/colorPrimaryDark"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/rlHead"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="@color/colorPrimary"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/ivLeftBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/width22px"
+                android:background="@drawable/drawable_head_back_bg"
+                android:clickable="true"
+                android:padding="@dimen/width22px"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_arrow_back_white_24dp" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/width167px"
+                android:layout_marginRight="@dimen/width167px"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#ffffffff"
+                android:textSize="@dimen/width52px" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/llBody"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:background="@color/white"
+                android:orientation="vertical" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 主题色 -->
+    <color name="colorPrimary">#2196f3</color>
+    <!-- 主题暗色 -->
+    <color name="colorPrimaryDark">#1e88e5</color>
+    <!-- 强调色 -->
+    <color name="colorAccent">#1976d2</color>
+
+    <color name="white">#ffffff</color>
+
+    <color name="main_bab_color_normal">#a0a0a0</color>
+    <color name="main_bab_color_pressed">#2196f3</color>
+
+    <color name="colorTextName">#808080</color>
+    <color name="colorTextValue">#222222</color>
+    <color name="colorMoreItemText">#858585</color>
+
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorHalfTransparent">#50000000</color>
+
+</resources>
